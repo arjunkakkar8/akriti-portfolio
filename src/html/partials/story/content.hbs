@@ -1,0 +1,20 @@
+<section id="content">
+  {{#each copy.projects}}
+    <div
+      class="project-container"
+      data-index="{{@index}}"
+      data-img="./assets/images/{{{this.image}}}"
+    >
+      <h3 class="project-title">
+        <a href="{{{this.link}}}" target="_blank">
+          {{{this.title}}}
+        </a>
+      </h3>
+      <div class="project-description">
+        <p>{{{this.description}}}</p>
+      </div>
+    </div>
+  {{/each}}
+
+	{{> story/contact copy.contact}}
+</section>

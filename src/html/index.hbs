@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang='en' data-version='{{timestamp}}'>
+
+<head>
+	{{> base/tracking }}
+	{{> base/meta }}
+	<title>{{copy.social.title}}</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel='stylesheet' type="text/css" href='style.css' />
+	<script src="./assets/scripts/d3.v5.min.js"></script>
+</head>
+
+<body>
+	<main>
+		{{> story/intro }}
+		{{> story/content }}
+	</main>
+	
+	<script type="text/javascript" src="index.js" async></script>
+</body>
+
+</html>
